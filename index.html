@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avellino Helados</title>    
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Avellino Helados</h1>
+        <nav>
+            <ul><a href="#Seccion1">NOSOTROS</a></ul>
+            <ul><a href="#Seccion2">PRODUCTOS</a></ul>
+            <ul><a href="#Seccion4">GALERIA DE FOTOS</a></ul>
+            <ul><a href="#Seccion5">CONTACTO</a></ul>           
+        </nav>
+    </header>
+    <main>
+        <!-- NOSOTROS -->
+        <section id="Seccion1">
+            <h1>NOSOTROS</h1>
+            <p>Heladería familiar y artesanal natural con elaboración propia en Lomas de Zamora.</p>
+            <p>Un concepto familiar y artesanal de Heladería Artesanal en Zona Sur de GBA.</p>
+            <p>Llegó a Lomas de Zamora Avellino Helados, una heladería artesanal natural con elaboración propia, liderada por sus dueños, quienes cuentan con amplia trayectoria en el rubro alimenticio.</p>
+        </section>
+        <!-- PRODUCTOS -->        
+        <section id="Seccion2">
+            <h1>PRODUCTOS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur porro necessitatibus asperiores maxime earum aspernatur exercitationem odit! Animi ea illum voluptas explicabo. Dicta, consequatur dolorem. Illo dicta nihil sit recusandae magni voluptates, corporis aspernatur. Autem, eligendi nobis! Quibusdam repellendus mollitia accusamus culpa eos minus qui necessitatibus nobis.</p>
+        </section>
+        </section>
+        <!-- GALERIA DE FOTOS -->        
+        <section id="Seccion4">
+            <h1>GALERIA DE FOTOS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur porro necessitatibus asperiores maxime earum aspernatur exercitationem odit! Animi ea illum voluptas explicabo. Dicta, consequatur dolorem. Illo dicta nihil sit recusandae magni voluptates, corporis aspernatur. Autem, eligendi nobis! Quibusdam repellendus mollitia accusamus culpa eos minus qui necessitatibus nobis.</p>
+        </section>
+        <!-- CONTACTO -->
+        <!-- 
+            Ubicacion de Google Maps
+            Formulario para enviar mail por consulta:
+            Nombre y apellido:
+            mail:
+            Celular:
+            Mensaje
+            ENVIAR
+         -->          
+        <section id="Seccion5">
+            <div>Imagen de Google Maps</div>
+            <div>
+                <h1>CONTACTO</h1>
+                    <h2>Teléfono</h2>
+                    <p>(011) 4123-4567</p>
+                <h2>Email</h2>
+                    <p>avellinohelados@gmail.com</p>
+                <h2>Dirección</h2>
+                    <p>Félix de Azara 852, Lomas de Zamora, Pcia de Buenos Aires, ARG.</p>
+            </div>
+            <div>
+                <h1>CONSULTAS</h1>
+                <form action="php/enviar.php" method="POST">
+                    <input type="text" placeholder="Nombres(*)">
+                    <!-- Es lo mismo que hecho anteriormente pero "ahorrandose" una linea de codigo.
+                    Indica al usuario qué y como tiene que escribir el dato. -->
+                    <br><br>
+                    <input type="email" required placeholder="Email">
+                    <br><br>
+                    <input type="text" name="Localidad" placeholder="Domicilio:" size="32">
+                    <br><br>
+                    <input type="phone" required placeholder="Ej: 011-4444-0000">
+                    <!-- tipo phone: para tipos de telefono -->        
+                    <br><br>
+                    <textarea name="Mensaje(*)" id="mensaje" cols="30" rows="10" required="required"></textarea>
+                    <br><br>
+                    <input type="submit" value="ENVIAR MENSAJE" id="enviar">
+                    <!-- por defecto el texto dice: "ENVIAR" se cambio con la etiqueta value
+                         agrega un id para personalizar el boton por defecto.
+                    -->
+                </form>
+            </div>
+            
+        </section>    
+    </main>
+    <footer>
+        <p>© 2020 | heladeriaavellino.com.ar | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

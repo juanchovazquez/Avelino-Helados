@@ -1,0 +1,68 @@
+#general {
+    margin: auto;
+    background-color: yellow;
+}
+
+header {
+    background-color: tomato;
+    border: 1px solid;
+}
+
+main {
+    margin: none;
+    padding: none;
+}
+
+section {
+    border: 1px solid;
+}
+
+#Seccion1{
+    background-color: blueviolet;
+}
+
+#Seccion2{
+    /* PRODUCTO */
+    margin-top: none;
+    background-color: orange;
+}
+
+#Seccion3{
+    background-color: blue;
+}
+
+#Seccion4{
+    background-color: green;
+}
+
+#Seccion5{
+    background-color: lightgoldenrodyellow;
+    
+}
+
+.divContacto {
+    background-color: red;
+    /*display: inline-block;*/
+}
+
+.left {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 45%;
+    border: steelblue solid 1px;
+    height: auto;
+}
+
+.right {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 45%;
+    border: steelblue solid 1px;
+    height: auto;
+}

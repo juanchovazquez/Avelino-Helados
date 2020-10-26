@@ -13,8 +13,8 @@
             <nav>
                 <ul><a href="#Seccion1">NOSOTROS</a></ul>
                 <ul><a href="#Seccion2">PRODUCTOS</a></ul>
-                <ul><a href="#Seccion4">GALERIA DE FOTOS</a></ul>
-                <ul><a href="#Seccion5">CONTACTO</a></ul>           
+                <ul><a href="#Seccion3">GALERIA DE FOTOS</a></ul>
+                <ul><a href="#Seccion4">CONTACTO</a></ul>           
             </nav>
         </header>
         <main>
@@ -32,26 +32,16 @@
             </section>
             </section>
             <!-- GALERIA DE FOTOS -->        
-            <section id="Seccion4">
+            <section id="Seccion3">
                 <h1>GALERIA DE FOTOS</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur porro necessitatibus asperiores maxime earum aspernatur exercitationem odit! Animi ea illum voluptas explicabo. Dicta, consequatur dolorem. Illo dicta nihil sit recusandae magni voluptates, corporis aspernatur. Autem, eligendi nobis! Quibusdam repellendus mollitia accusamus culpa eos minus qui necessitatibus nobis.</p>
             </section>
-            <!-- CONTACTO -->
-            <!-- 
-                Ubicacion de Google Maps
-                Formulario para enviar mail por consulta:
-                Nombre y apellido:
-                mail:
-                Celular:
-                Mensaje
-                ENVIAR
-            -->          
-            <section id="Seccion5">
+            <!-- CONTACTO -->    
+            <section id="Seccion4">
                 <div class="left">
-                    Imagen de Google Maps
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-
-                <!-- <div class="divContacto">
+                <div class="center">
                     <h1>CONTACTO</h1>
                         <h2>Teléfono</h2>
                         <p>(011) 4123-4567</p>
@@ -59,34 +49,26 @@
                         <p>avellinohelados@gmail.com</p>
                     <h2>Dirección</h2>
                         <p>Félix de Azara 852, Lomas de Zamora, Pcia de Buenos Aires, ARG.</p>
-                </div> -->
+                </div>
                 <div class="right">
                     <h1>CONSULTAS</h1>
                     <form action="php/enviar.php" method="POST">
-                        <input type="text" placeholder="Nombres(*)">
-                        <!-- Es lo mismo que hecho anteriormente pero "ahorrandose" una linea de codigo.
-                        Indica al usuario qué y como tiene que escribir el dato. -->
+                        <input type="text" placeholder="Nombres(*):">
                         <br><br>
-                        <input type="email" required placeholder="Email">
+                        <input type="email" required placeholder="Email(*):">
                         <br><br>
-                        <input type="text" name="Localidad" placeholder="Domicilio:" size="32">
+                        <input type="text" name="Localidad" placeholder="Localidad(*):" size="32">
                         <br><br>
-                        <input type="phone" required placeholder="Ej: 011-4444-0000">
-                        <!-- tipo phone: para tipos de telefono -->        
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required="required" placeholder="Mensaje(*):"></textarea>
                         <br><br>
-                        <textarea name="Mensaje(*)" id="mensaje" cols="30" rows="10" required="required"></textarea>
-                        <br><br>
-                        <input type="submit" value="ENVIAR MENSAJE" id="enviar">
-                        <!-- por defecto el texto dice: "ENVIAR" se cambio con la etiqueta value
-                            agrega un id para personalizar el boton por defecto.
-                        -->
+                        <input type="submit" value="ENVIAR" id="enviar">
                     </form>
                 </div>
                 
             </section>    
         </main>
         <footer>
-            <p>© 2020 | heladeriaavellino.com.ar | Todos los derechos reservados.</p>
+            <p>© 2020 | avellinohelados.com.ar | Todos los derechos reservados.</p>
         </footer>
     </div>
 </body>

@@ -1,127 +1,250 @@
+* {
+    margin: 0; padding: 0; box-sizing: content-box;
+}
+
 body {
-    background-color:rgb(177, 137, 51);
+    background-color:rgb(179, 105, 34);
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     color: white;
-}
-#general {
     margin: auto;
-    margin: 0 5% 0 5%;
-    background-color:rgb(255, 174, 0);
+    width: 80%;
+    border: 1px white solid;
 }
 
 header {
-    text-align: center; 
-    width: 100%;
+    background-color:rgb(91, 52, 39);  
     position: fixed;
-    overflow: hidden;
+    top: 0;
+    z-index: 5;
+    width: 80%;    
+    height: auto;
+    border-bottom: 1px white solid;
+}
+
+.menuppal {
+    display: flex;
+/*     border: 0.1px white solid;     */
 }
 
 #logo {
-    float: left;
-    width: 30%;
-    position: relative;
-    height: auto;     
-}
-
-#logo img {
-    padding-left: 4%;    
-    height: 60%;
-    width: 80%;
+    /* Imagen del logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35%;
+    border-right: 1px white solid;
 }
 
 #menu {
-    float: left;
-    width: 60%;
-    position: relative;
-    height: auto;   
+    width: 100%;  
 }
 
-header nav ul {
-    display: inline-block;
+#menu h1 {
+    /* Avellino */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+    margin-top: .5%;
+    margin-bottom: 2%;
+    font-size: 3em;
+    font-variant-caps: all-small-caps;
+    text-align: center;
 }
 
-header nav ul a {
-    text-decoration: none;
+#menu h2 {
+    /* Helado Artesanal Natural */    
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    font-style: italic;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-header h2 {
-    margin: 0px;
-}
-
-main {
-    margin: auto;
-}
-
-section {
-    font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
-    padding: 0 4% 0 4%;   
-}
-
-
-#Seccion1{
-    overflow: none;
-    border: 1px;
-    /* NOSOTROS */
-}
-
-#Seccion2{
-    /* PRODUCTO */
-    margin-top: none;   
-}
-
-#Seccion3{
-    /* GALERIA DE FOTOS */  
-   
-}
-
-#Seccion4{
-    /* CONTACTO */  
-    background-color: black;
-    overflow: hidden;
-    border: 1px solid;  
-}
-
-.left {
-    float: left;
-    width: 35%;
-    position: relative;
-    height: auto;
-    border: 1px solid;    
-}
-
-.left iframe{
-    width: 95%;
-    height: 400px;
-    border: 1px solid;       
-}
-
-.center {
-    padding-left: 2%;
-    width: 30%;
-    position: relative;
-    float: left;
-    border: 1px solid;      
-}
-
-.right {
-    padding-left: 2%;
-    width: 30%;  
-    position: relative;
-    float: left;
-    border: 1px solid;       
-    overflow: hidden;    
-}
-
-form input, form textarea {
+nav {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px white solid;
 }
 
-#enviar {
-    width: auto;
+nav ul {
+    padding: 2%;
+    font-variant: small-caps;
+    text-align: center;    
 }
+
+nav ul a {  
+    text-decoration: none;
+    color:white;
+    font-size: 1.25em;
+    font-weight: 550;
+}
+
+main section{
+    padding-top:19.5%;
+    padding-left: 2%;
+}
+
+#Seccion1 {
+    padding-top: 15%;
+    background-image: url('/Images/Fondo_avellino.jpg');
+    background-position: 0px 150px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 31rem;
+    padding-left: 0;
+}
+
+#quienessomos {
+    background-color: rgb(91, 52, 39);
+    width: 26%;
+    padding-top: 0%;
+    margin: 0;
+    margin-top: 10%;
+    opacity: 0.8;
+}
+
+#quienessomos p {
+    color:white;
+    padding-top: 6%;
+    padding-left: 7%;    
+    line-height: 1.7em;
+    -webkit-text-stroke: 0.2px black ;
+    opacity: 1;
+}
+
+#quienessomos h1 {
+    padding-left: 7%;    
+}
+main section h1 {
+    -webkit-text-stroke: 1.5px  rgb(179, 105, 34) ;
+    /*:rgb(179, 105, 34)*/
+    text-transform: uppercase;
+    color:rgb(255, 183, 27) ;
+    font-weight: 900;
+    font-size: 2.3em;
+}
+
+main section p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+main section :last-child{
+    margin-bottom: 1%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item img{
+    width: 90%;
+    height: 90%;
+}
+
+.datoscontacto {
+    display:flex;
+    justify-content: flex-start;
+    margin-top: 1%;}
+
+.datoscontacto h2{
+    text-transform: uppercase;}
+
+.contactoheladeria {
+    padding-left: 5%;
+    padding-right:3%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 23%;
+    margin-bottom: 8%;    
+/*     border: 1px white solid; */
+}
+.contactoheladeria h2{
+    padding-top: 5%;
+    color:rgb(70, 46, 39);
+    font-weight: 900;
+}
+.contactoheladeria p{
+    padding-top:3%;
+    font-size: 1em;
+}
+
+#imagengooglemaps {
+    padding-top: 2%;
+    width: 65%;
+    height: 30em;
+}
+
+#imagengooglemaps h2, #consultas h2 {
+    margin-bottom: 6%;}
+
+#imagengooglemaps iframe {
+    height: 75%;
+    width: 100%;}
+
+.contactoheladeria h2 {
+    margin-top: 10%;}
+
+.telefono h2 {
+    margin-top: 0;}
+
+#consultas input{
+    width: 95%;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100%;}
+
+#consultas textarea{
+    border-width: 2px;
+    width: 95%;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;}
+
+#enviar submit {
+    width: 50px;
+    height: 20px;}
 
 footer {
-    margin: 0px;
-    border: 1px solid;
+    padding-top: 10%;
+    padding-bottom: 3%;}
+
+footer p {
     text-align: center;
+    font-size: 12px;}
+
+
+@media (max-width:1020px){
+
+    #logo {
+        width: 100%;
+    }
+    #menu h1 {
+        font-size: 100%;
+    }
+    #menu h2 {
+        font-size: 60%;
+    }
+    #menu nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 60%;
+    }
+    #menu nav ul {
+        border: 1px white solid;
+    }
+
+    #menu nav ul a {
+        display: block;
+    }
+
+    main section{
+        padding-top:40%;
+    }
 }

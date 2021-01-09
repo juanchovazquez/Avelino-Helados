@@ -8,74 +8,123 @@
 </head>
 <body>
     <div id=general>
+
         <header>
-            <div id="logo">
-                <img src="Images/imagen_logo.jpg" alt="imagen del logo de avellino">
+            <div class="menuppal">
+                <div id="logo" style="background-image: url('/Images/imagen_logo.jpg');">
+                </div>
+    
+                <div id="menu">
+                    <h1>avellino</h1>
+                    <h2>helado artesanal natural</h2>
+                    <nav>
+                        <ul><a href="#Seccion1">nosotros</a></ul>
+                        <ul><a href="#Seccion2">productos</a></ul>
+                        <ul><a href="#Seccion3">galeria de fotos</a></ul>
+                        <ul><a href="#Seccion4">contacto</a></ul>           
+                    </nav>
+                </div>
             </div>
-            <div id="menu">
-                <h1>Avellino</h1>
-                <h2>Helado Artesanal Natural</h2>
-                <nav>
-                    <ul><a href="#Seccion1">NOSOTROS</a></ul>
-                    <ul><a href="#Seccion2">PRODUCTOS</a></ul>
-                    <ul><a href="#Seccion3">GALERIA DE FOTOS</a></ul>
-                    <ul><a href="#Seccion4">CONTACTO</a></ul>           
-                </nav>
-            </div>
+
         </header>
+
         <main>
             <!-- NOSOTROS -->
             <section id="Seccion1">
-                <h1>NOSOTROS</h1>
-                <p>Heladería familiar y artesanal natural con elaboración propia en Lomas de Zamora.</p>
-                <p>Un concepto familiar y artesanal de Heladería Artesanal en Zona Sur de GBA.</p>
-                <p>Llegó a Lomas de Zamora Avellino Helados, una heladería artesanal natural con elaboración propia, liderada por sus dueños, quienes cuentan con amplia trayectoria en el rubro alimenticio.</p>
+                <div id="quienessomos">
+                    <h1>nosotros</h1>                    
+                    <p> Avellino, es una heladería familiar y artesanal natural con elaboración propia, liderada por sus dueños, quienes cuentan con amplia trayectoria en el rubro alimenticio. </p>
+<!--                     <p>Avellino Helados se encuentra en la localidad de Lomas de Zamora, zona sur del Gran Buenos Aires.</p> -->
+                </div>
             </section>
+            <hr>
             <!-- PRODUCTOS -->        
             <section id="Seccion2">
-                <h1>PRODUCTOS</h1>
+                <h1>productos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur porro necessitatibus asperiores maxime earum aspernatur exercitationem odit! Animi ea illum voluptas explicabo. Dicta, consequatur dolorem. Illo dicta nihil sit recusandae magni voluptates, corporis aspernatur. Autem, eligendi nobis! Quibusdam repellendus mollitia accusamus culpa eos minus qui necessitatibus nobis.</p>
             </section>
+            <hr>
             </section>
             <!-- GALERIA DE FOTOS -->        
             <section id="Seccion3">
-                <h1>GALERIA DE FOTOS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur aut consequuntur porro necessitatibus asperiores maxime earum aspernatur exercitationem odit! Animi ea illum voluptas explicabo. Dicta, consequatur dolorem. Illo dicta nihil sit recusandae magni voluptates, corporis aspernatur. Autem, eligendi nobis! Quibusdam repellendus mollitia accusamus culpa eos minus qui necessitatibus nobis.</p>
+                <h1>galeria</h1>
+                <div id="gallery">
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0109.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0110.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0111.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0112.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0113.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0114.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0115.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0116.PNG"alt="">
+                    </div>
+                    <div class="grid-item">
+                        <img src="/Images/IMG-0117.PNG"alt="">
+                    </div>
+               </div>
             </section>
+            <hr>
             <!-- CONTACTO -->    
             <section id="Seccion4">
-                <div class="left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h1>contacto</h1> 
+                
+                <div class="datoscontacto">
+                    <div class="contactoheladeria">
+                        <div class="telefono">
+                            <h2>teléfono</h2>
+                            <p>(011) 4123-4567</p>
+                        </div>
+                        <div class="email">
+                            <h2>email</h2>
+                            <p>avellinohelados@gmail.com</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>dirección</h2>
+                            <p>Félix de Azara 852, Lomas de Zamora, Pcia de Buenos Aires, ARG.</p>
+                        </div>
+                    </div>
+                    <div id="imagengooglemaps">
+                        <!-- <h2>ubicacion</h2> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.235152869861!2d-58.40562648518994!3d-34.749668772741344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b0f2d839b%3A0xd20f81c921bb0983!2sAvellino%20helados!5e0!3m2!1ses!2sar!4v1603660551105!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
-                <div class="center">
-                    <h1>CONTACTO</h1>
-                        <h2>Teléfono</h2>
-                        <p>(011) 4123-4567</p>
-                    <h2>Email</h2>
-                        <p>avellinohelados@gmail.com</p>
-                    <h2>Dirección</h2>
-                        <p>Félix de Azara 852, Lomas de Zamora, Pcia de Buenos Aires, ARG.</p>
-                </div>
-                <div class="right">
-                    <h1>CONSULTAS</h1>
-                    <form action="php/enviar.php" method="POST">
-                        <input type="text" placeholder="Nombres(*):">
+                <div id="consultas">
+                    <h2>consultas</h2>
+                    <form action="php/enviar.php" method="POST" autocomplete="off">
+                        <input type="text" required placeholder="Nombre">
                         <br><br>
-                        <input type="email" required placeholder="Email(*):">
+                        <input type="email" required placeholder="Email">
                         <br><br>
-                        <input type="text" name="Localidad" placeholder="Localidad(*):" size="32">
+                        <input type="text" required name="Localidad" placeholder="Localidad" size="32">
                         <br><br>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required="required" placeholder="Mensaje(*):"></textarea>
+                        <textarea name="mensaje" required id="mensaje" cols="30" rows="10" required="required" placeholder="Mensaje"></textarea>
                         <br><br>
                         <input type="submit" value="ENVIAR" id="enviar">
                     </form>
                 </div>
-                
             </section>    
         </main>
         <footer>
             <p>© 2020 | avellinohelados.com.ar | Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="js/avellino.js"> -->
+    </script>
 </body>
 </html>
